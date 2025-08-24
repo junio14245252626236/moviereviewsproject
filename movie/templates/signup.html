@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello baby, thank you for visiting. </title>
+</head>
+<body>
+    {% if email %}
+        <h2>Added {{ email }} to mailing list</h2>
+    {% else %}
+        <h2>No email provided</h2>
+    {% endif %}
+
+    <a href="{% url 'home' %}">Home</a>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h3>Movies per Year</h3>
+  {% if graphic_year %}
+      <img src="data:image/png;base64,{{ graphic_year }}" alt="Movies per year chart">
+  {% else %}
+      <p>No hay datos de años disponibles.</p>
+  {% endif %}
+
+  <h3>Movies per Genre</h3>
+  {% if graphic_genre %}
+      <img src="data:image/png;base64,{{ graphic_genre }}" alt="Movies per genre chart">
+  {% else %}
+      <p>No hay datos de géneros disponibles.</p>
+  {% endif %}
+{% endblock %}
